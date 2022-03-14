@@ -1,25 +1,26 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
+import AppBar from  "@material-ui/core/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import logo from "../Assets/images/posinewslogo.png"
+import styled from "styled-components"
+
+const LogoImage = styled.img`
+width:90px
+`
 
 function Navbar() {
   return (
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
-          <Toolbar>
-      
+        <AppBar position="static"  >
+          <Toolbar sx={{backgroundColor:"white"}}>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              News
+              <LogoImage src={logo}></LogoImage>
             </Typography>
           </Toolbar>
         </AppBar>
       </Box>
   );
 }
-
 export default Navbar;
