@@ -17,9 +17,7 @@ const port = process.env.port || 5000;
     })
     app.get('/goodnews',(req,res)=>{
         res.send("banana");
-    
     })
-
 
     app.get("/good",(req,res)=>{
         axios.get("https://old.reddit.com/r/UpliftingNews/").then(resp=>{
@@ -29,13 +27,14 @@ const port = process.env.port || 5000;
             const newsTitle = $(ele).find("a.title").text();
             const newsImage =   $(ele).find("img").attr("src") != undefined ? $(ele).find("img").attr("src").slice(2):"there is no image for this news article";
             const newsUrl = $(ele).find("a.title").attr("href");
+            
             const newsElement ={
                 newsTitle,
                 newsImage,
                 newsUrl,
             }
             newsObject.push(newsElement);
-            console.log(newsObject)
+
         })        
     }).catch(err=>console.log(err))
     res.json(newsObject)
@@ -45,8 +44,5 @@ const port = process.env.port || 5000;
 
 
 
- 
-
-
-
 app.listen(port,()=>console.log("Server is running"));
+
