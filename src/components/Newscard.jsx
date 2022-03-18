@@ -8,6 +8,19 @@ const CardBox = styled.div`
   width: 60%;
   padding: 5px;
   align-items:center;
+  :hover{
+    box-shadow:
+    1px 1px #373737,
+    2px 2px #373737,
+    3px 3px #373737,
+    4px 4px #373737,
+    5px 5px #373737,
+    6px 6px #373737;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+    }
+
 `;
 
 function Newscard({ image, title, link }) {
