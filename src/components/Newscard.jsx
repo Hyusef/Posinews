@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Newscard() {
+function Newscard({image,title,link}) {
     return (
         <div>
             
