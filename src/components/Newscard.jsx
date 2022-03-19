@@ -27,7 +27,7 @@ function Newscard({ image, title, link }) {
       <Link href={link}>
         <CardBox>
           <div style={{ display: "flex" }}>
-            <img src={`https://${image}`}></img>
+            <img width="140px" src={ image?`https://${image}`:"https://images.pexels.com/photos/4185957/pexels-photo-4185957.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}></img>
             <p>{title}</p>
           </div>
         </CardBox>
