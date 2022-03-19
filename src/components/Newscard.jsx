@@ -5,7 +5,7 @@ const CardBox = styled.div`
   display: inline-block;
   border: 1px solid black;
   margin: 10px;
-  width: 60%;
+  width: 100%;
   padding: 15px;
   :hover {
     box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737,
@@ -24,7 +24,8 @@ const InnerCardBox = styled.div`
   font-size: 20px;
   margin: 2px;
   p {
-    margin-left: 7px;
+    margin: 7px;
+    padding:5px;
   }
 `;
 

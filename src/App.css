@@ -1,0 +1,7 @@
+.newsContainer{
+display:flex;
+width:60%;
+flex-direction: column;
+margin-left: auto;
+margin-right:auto;
+}

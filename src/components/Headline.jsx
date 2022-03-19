@@ -2,8 +2,10 @@ import React from 'react'
 import styled from "styled-components"
 
 const Header = styled.h1`
-font-size:3.2rem;
+font-size:3rem;
 font-family:Verdana;
+text-align:center;
+color:rebeccapurple;
 `
 function Headline() {
     return (

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Newscard from "./components/Newscard";
+import Headline from "./components/Headline";
 
 function App() {
   const [newsInfo, setNewsInfo] = useState([1, 2, 3]);
@@ -19,6 +20,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="newsContainer">
+      <Headline/>
       {newsInfo.map((ele, i) => {
         return (
           <Newscard
@@ -29,6 +32,7 @@ function App() {
           />
         );
       })}
+      </div>
     </div>
   );
 }
