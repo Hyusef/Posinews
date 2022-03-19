@@ -22,6 +22,7 @@ function App() {
       {newsInfo.map((ele, i) => {
         return (
           <Newscard
+            key={i}
             image={ele.newsImage}
             title={ele.newsTitle}
             link={ele.newsUrl}
