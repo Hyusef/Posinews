@@ -17,21 +17,21 @@ const CardBox = styled.div`
   cursor: pointer;
 `;
 
-const Link = styled.a`
 
-`;
+
+
 
 function Newscard({ image, title, link }) {
   return (
     <div>
-      <Link href={link}>
+      <a href={link}>
         <CardBox>
           <div style={{ display: "flex" }}>
             <img width="140px" src={ image?`https://${image}`:"https://images.pexels.com/photos/4185957/pexels-photo-4185957.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}></img>
             <p>{title}</p>
           </div>
         </CardBox>
-      </Link>
+      </a>
     </div>
   );
 }
