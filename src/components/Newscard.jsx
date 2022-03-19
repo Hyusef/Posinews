@@ -25,7 +25,7 @@ const InnerCardBox = styled.div`
   margin: 2px;
   p {
     margin: 7px;
-    padding:5px;
+    padding: 5px;
   }
 `;
 

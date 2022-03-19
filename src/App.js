@@ -21,21 +21,20 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="newsContainer">
-      <Headline/>
-      {newsInfo.map((ele, i) => {
-        return (
-          <Newscard
-            key={i}
-            image={ele.newsImage}
-            title={ele.newsTitle}
-            link={ele.newsUrl}
-          />
-        );
-      })}
+        <Headline />
+        {newsInfo.map((ele, i) => {
+          return (
+            <Newscard
+              key={i}
+              image={ele.newsImage}
+              title={ele.newsTitle}
+              link={ele.newsUrl}
+            />
+          );
+        })}
       </div>
     </div>
   );
 }
-
 
 export default App;
