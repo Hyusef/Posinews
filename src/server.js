@@ -25,8 +25,11 @@ const port = process.env.port || 5000;
         const $ = cheerio.load(htmlData)
         $(".thing").each((i,ele)=>{
             const newsTitle = $(ele).find("a.title").text();
-            const newsImage =   $(ele).find("img").attr("src") != undefined ? $(ele).find("img").attr("src").slice(2):"there is no image for this news article";
+            let newsImage =   $(ele).find("img").attr("src") != undefined ? $(ele).find("img").attr("src").slice(2):"";
             const newsUrl = $(ele).find("a.title").attr("href");
+            if(newsImage.includes("tps")){
+                newsImage = ""
+            }
             
             const newsElement ={
                 newsTitle,
