@@ -1,5 +1,4 @@
 import "./App.css";
-import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import axios from "axios";
 import { useState, useEffect } from "react";
