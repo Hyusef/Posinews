@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 require('dotenv').config()
 
-const port = process.env.port || 5000;
+const port = process.env.port || 3000;
 
 let newsObject = [];
 const image = [];
