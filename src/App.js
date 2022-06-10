@@ -6,16 +6,19 @@ import Newscard from "./components/Newscard";
 import Headline from "./components/Headline";
 
 function App() {
-  const [newsInfo, setNewsInfo] = useState([1, 2, 3]);
+  const [newsInfo, setNewsInfo] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("/good")
-      .then((res) => {
-        setNewsInfo(res.data);
-      })
-      .catch((err) => console.log(err));
+  useEffect(() => {ç
+    getNews();
   }, []);
+
+  const getNews = () => {
+    return axios
+      .get("/api/good")
+      .then((res) => setNewsInfo(res.data))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="App">
       <Navbar />
