@@ -1,70 +1,82 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
 
-## Available Scripts
+  <br>
+  <a href="https://swisscalc.netlify.app/"><img src='https://user-images.githubusercontent.com/61304986/175817859-9dab981d-73df-429c-ac4a-d84b35ca62c1.png' alt="Posinews" width="150"></a>
 
-In the project directory, you can run:
+</h1>
 
-### `npm start`
+<h4 align="center">Posinews shows you news scraped from the subreddit upliftingNews. </h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#about">About</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#challenges">Challenges</a> •
+  <a href="#lessons-learned">Lessons Learned</a> •
+  <a href="#improvements">Improvements</a> •
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![screenshot](https://user-images.githubusercontent.com/61304986/172940243-e1f0866e-40fa-4a61-bbae-569720df7ba9.gif)
 
-### `npm run build`
+## Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 
+* View only positive news according to subreddit upliftingNews
+* Simple and easy to use.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## About
+<p> This is an app where i wanted to implement scraping. I couldn't find any good api's for only positive news. so i decided to just scrape the upliftingNews subreddit. </p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
+* React  
+* Node.js 
+* Express 
+* Material-UI 
+* Cheerio
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How To Use
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Clone this repository
+$ git clone https://github.com/hyusef/posinews
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Go into the repository
+$ cd posinews
 
-## Learn More
+# Install dependencies
+$ npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the app
+$ npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Challenges
+This project is not complex so i didn't face that many challenges but i remember it being difficult to scrape the reddit.com website especially the thumbnails since the upliftingNews subreddit requires you click the link to view the website so instead of scraping reddit.com i scraped old.reddit.com to get the thumbnails.
+ 
+## Lessons Learned
+* I learnt alot about scraping websites during this project. I learnt about different tools like selenium. I learnt about the legality of scraping, the different methods, data processing, and how many large companies use it for different reasons like price comparisons. I am now familiar with the Cheerio library which uses jquery like syntax.
 
-### Code Splitting
+## Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* I didn't put much effort into designing this app, So it's ugly. I was more focused on the scraping.
 
-### Analyzing the Bundle Size
+## You may also like...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [StockMore](https://github.com/hyusef/stockmore) - A Stock analysis App.
+- [Wordy](https://github.com/hyusef/wordy) - A word collage generator. 
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+MIT
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
